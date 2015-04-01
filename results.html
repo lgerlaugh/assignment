@@ -1,0 +1,244 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+	<meta charset="utf-8">
+	<title>UXResources</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="styles/vendor.css">
+	<link rel="stylesheet" href="styles/02e9c9e9.main.css">
+	<script src="scripts/vendor/32fa189c.modernizr.js"></script>
+
+</head>
+
+<body>
+	<!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+	<header>
+		<div style="background-color:#323232">
+			<div class="container">
+				<img class="pull-left" src="images/a569762a.logo-left.png">
+				<img class="pull-right" src="images/27230615.logo-right.png">
+			</div>
+		</div>
+		<div style="background-color:#ebebeb">
+			<div class="container">
+				<img src="images/5dca5807.title.png">
+			</div>
+		</div>
+		<div style="background-color:#004C97">
+			<div class="container">
+				<img class="pull-left" src="images/f65b2c35.navbar-left.png">
+				<img class="pull-right" src="images/4b6f5d12.navbar-right.png">
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<h1>Patent Assignment Search</h1>
+
+		<div class="row">
+			<div class="col-xs-6">
+
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Search for...">
+					<span class="input-group-btn">
+						<button class="btn btn-success" type="button" onclick="location.href='results.html'">Search</button>
+					</span>
+				</div>
+<a class="btn btn-link pull-right" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					Advanced search
+				</a>
+			</div>
+			<div class="col-xs-6">
+
+				<div class="input-group">
+					<div class="input-group-btn">
+						<button class="btn btn-default dropdown-toggle btn-blog" data-toggle="dropdown" aria-expanded="false" id="dropdownMenu1" style="width:185px">
+							<span class="selection pull-left">Select one</span>
+							<span class="pull-right glyphiconglyphicon-chevron-down caret" style="float:right;margin-top:10px"></span>
+						</button>
+
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+							<li>
+								<a href="#" data-value="Enter exact info to look-up">Reel/Frame number</a>
+							</li>
+							<li>
+								<a href="#" data-value="Enter exact info to look-up">Patent number</a>
+							</li>
+							<li>
+								<a href="#" data-value="Enter exact info to look-up">Application number</a>
+							</li>
+							<li>
+								<a href="#" data-value="Enter exact info to look-up">Publication number</a>
+							</li>
+							<li>
+								<a href="#" data-value="Enter exact info to look-up">PCT number</a>
+							</li>
+							<li>
+								<a href="#" data-value="Enter exact info to look-up">Patent Int'l Reg. number</a>
+							</li>
+						</ul>
+					</div>
+					<input type="text" class="form-control" id="vl">
+				</div>
+			</div>
+
+			
+			<div class="collapse col-md-12" id="collapseExample">
+				<div id="advFields" class="advanced-fields form-horizontal" style="border: 1px solid #eee; padding: 10px">
+					<div class="row">
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+
+							<fieldset>
+								<legend>Assignment
+
+								</legend>
+								<label for="reelNo">
+									Reel
+									<input id="reelNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="frameNo">
+									Frame
+									<input id="frameNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="conveyanceText">
+									Conveyance Type
+									<input id="conveyanceText" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+							<fieldset>
+								<legend>Correspondent
+
+								</legend>
+								<label for="corrName">
+									<span>Name</span>
+									<input id="corrName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="corrAddress">
+									<span>Address</span>
+									<input id="corrAddress" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<fieldset>
+								<legend>Assignor
+
+								</legend>
+								<label for="patAssignorName">
+									<span>Assignor Name</span>
+									<input id="patAssignorName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Assignee
+
+								</legend>
+								<label for="patAssigneeName">
+									<span>Name</span>
+									<input id="patAssigneeName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeAddress">
+									<span>Street Address</span>
+									<input id="patAssigneeAddress" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeCity">
+									<span>City</span>
+									<input id="patAssigneeCity" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeState">
+									<span>State</span>
+									<input id="patAssigneeState" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeCountryName">
+									<span>Country</span>
+									<input id="patAssigneeCountryName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneePostcode">
+									<span>Postal Code</span>
+									<input id="patAssigneePostcode" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<fieldset>
+								<legend>Patent Numbers</legend>
+								<label for="applNum">
+									<span>
+										Application</span>
+									<input id="applNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="publNum">
+									<span>
+										Publication</span>
+									<input id="publNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patNum">
+									<span>
+										Patent</span>
+									<input id="patNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="pctNum">
+									<span>
+										PCT</span>
+									<input id="pctNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="intlRegNum">
+									<span>
+										Intl Registration</span>
+									<input id="intlRegNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+							<fieldset>
+								<legend>Invention Title</legend>
+								<label for="inventionTitle">
+									<span>
+										Invention Title</span>
+									<input id="inventionTitle" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div style="margin-top:50px; margin-bottom: 50px">
+
+		<img src="images/67bc0006.resultsTable.png">
+		</div>
+
+
+
+		<div class="footer">
+			<hr style="margin-bottom:7px">
+			<p class="text-right">
+				Release 2.0 |
+				<a href="#">Send feedback</a>
+			</p>
+		</div>
+
+	</div>
+
+
+	<script src="scripts/9e2a73af.vendor.js"></script>
+
+
+
+	<script src="scripts/cb7562c6.plugins.js"></script>
+
+	<script src="scripts/2fcae939.main.js"></script>
+</body>
+
+</html>
