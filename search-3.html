@@ -40,10 +40,10 @@
 			</div>
 		</div>
 	</header>
-	<div class="container">
+	<div class="container container-center">
 		<h1>Patent Assignment Search</h1>
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-12">
 
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Search for...">
@@ -53,41 +53,38 @@
 				</div>
 
 			</div>
-			<div class="col-lg-12 text-right">
+			<div class="col-lg-12">
 
-				<a class="btn btn-link" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				<a class="btn btn-link pull-right" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 					Advanced search
 				</a>
-
-				<div class="collapse" id="collapseExample">
-					<div id="advFields" class="advanced-fields form-horizontal" style="display: block">
+</div>
+				<div class="collapse col-lg-12" id="collapseExample">
+					<div id="advFields" class="advanced-fields form-horizontal" style="border: 1px solid #eee; padding: 10px">
 						<div class="row">
 
 							<div class="col-xs-12 col-sm-6 col-md-4">
 
 								<fieldset>
 									<legend>Assignment
-										<i id="ember381" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The act of transferring to another the ownership of one’s property—the interest and rights to the property"></i>
+										
 									</legend>
 									<label for="reelNo">
-										<span>
-											<i id="ember382" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="Assignment data catalogue and reference numbers"></i>Reel</span>
+										Reel
 										<input id="reelNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 									<label for="frameNo">
-										<span>
-											<i id="ember386" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="Assignment data catalogue and reference numbers"></i>Frame</span>
+										Frame
 										<input id="frameNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 									<label for="conveyanceText">
-										<span>
-											<i id="ember388" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The nature of the transfer of ownership of property from one person to another"></i>Conveyance Type</span>
+										Conveyance Type
 										<input id="conveyanceText" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 								</fieldset>
 								<fieldset>
 									<legend>Correspondent
-										<i id="ember390" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The name and address of the party who submitted the assignment information"></i>
+										
 									</legend>
 									<label for="corrName">
 										<span>Name</span>
@@ -103,7 +100,7 @@
 							<div class="col-xs-12 col-sm-6 col-md-4">
 								<fieldset>
 									<legend>Assignor
-										<i id="ember393" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="A person, a group of persons, or an organization that transfers ownership rights of the patent application or patent to another person, group of persons, or organization"></i>
+										
 									</legend>
 									<label for="patAssignorName">
 										<span>Assignor Name</span>
@@ -113,7 +110,7 @@
 
 								<fieldset>
 									<legend>Assignee
-										<i id="ember395" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The person, group of persons, or organization that received ownership rights of the patent application or patent"></i>
+										
 									</legend>
 									<label for="patAssigneeName">
 										<span>Name</span>
@@ -146,27 +143,27 @@
 									<legend>Patent Numbers</legend>
 									<label for="applNum">
 										<span>
-											<i id="ember402" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The number assigned when a patent application is filed at the USPTO"></i>Application</span>
+											Application</span>
 										<input id="applNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 									<label for="publNum">
 										<span>
-											<i id="ember404" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="If a patent application is published, it is assigned a publication number"></i>Publication</span>
+											Publication</span>
 										<input id="publNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 									<label for="patNum">
 										<span>
-											<i id="ember406" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The number the USPTO assigned to the patent"></i>Patent</span>
+											Patent</span>
 										<input id="patNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 									<label for="pctNum">
 										<span>
-											<i id="ember408" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The number assigned when a Patent Cooperation Treaty international application is filed"></i>PCT</span>
+											PCT</span>
 										<input id="pctNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 									<label for="intlRegNum">
 										<span>
-											<i id="ember410" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The international registration number issued by the World Intellectual Property Organization"></i>Intl Registration</span>
+											Intl Registration</span>
 										<input id="intlRegNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 								</fieldset>
@@ -174,7 +171,7 @@
 									<legend>Invention Title</legend>
 									<label for="inventionTitle">
 										<span>
-											<i id="ember412" class="ember-view glyphicon glyphicon-info-sign" data-placement="right" data-original-title="" title="" data-content="The title listed on the published application or patent"></i>Invention Title</span>
+											Invention Title</span>
 										<input id="inventionTitle" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
 									</label>
 								</fieldset>
@@ -183,7 +180,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		
 		<div class="row">
 			<div class="col-lg-12">
 

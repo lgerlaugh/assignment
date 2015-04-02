@@ -46,9 +46,10 @@
 			<div class="col-md-12">
 
 				<div class="input-group">
-					<input type="text" class="form-control" placeholder="Search for...">
+					<input type="text" class="form-control" placeholder="Enter any assignment information in this smart search">
 					<span class="input-group-btn">
-						<button class="btn btn-success" type="button" onclick="location.href='results.html'">Search</button>
+						<button class="btn btn-success" type="button" onclick="location.href='results.html'">
+							<i class="fa fa-search" style="margin-right:10px"></i>Search</button>
 					</span>
 				</div>
 
@@ -58,161 +59,164 @@
 				<a class="btn btn-link pull-right" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 					Advanced search
 				</a>
-</div>
-				<div class="collapse col-lg-12" id="collapseExample">
-					<div id="advFields" class="advanced-fields form-horizontal" style="border: 1px solid #eee; padding: 10px">
-						<div class="row">
+			</div>
+			<div class="collapse col-lg-12" id="collapseExample">
+				<div id="advFields" class="advanced-fields form-horizontal" style="border: 1px solid #eee; padding: 10px">
+					<div class="row">
 
-							<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="col-xs-12 col-sm-6 col-md-4">
 
-								<fieldset>
-									<legend>Assignment
-										
-									</legend>
-									<label for="reelNo">
-										Reel
-										<input id="reelNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="frameNo">
-										Frame
-										<input id="frameNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="conveyanceText">
-										Conveyance Type
-										<input id="conveyanceText" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-								</fieldset>
-								<fieldset>
-									<legend>Correspondent
-										
-									</legend>
-									<label for="corrName">
-										<span>Name</span>
-										<input id="corrName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="corrAddress">
-										<span>Address</span>
-										<input id="corrAddress" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-								</fieldset>
-							</div>
+							<fieldset>
+								<legend>Assignment
 
-							<div class="col-xs-12 col-sm-6 col-md-4">
-								<fieldset>
-									<legend>Assignor
-										
-									</legend>
-									<label for="patAssignorName">
-										<span>Assignor Name</span>
-										<input id="patAssignorName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-								</fieldset>
+								</legend>
+								<label for="reelNo">
+									Reel
+									<input id="reelNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="frameNo">
+									Frame
+									<input id="frameNo" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="conveyanceText">
+									Conveyance Type
+									<input id="conveyanceText" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+							<fieldset>
+								<legend>Correspondent
 
-								<fieldset>
-									<legend>Assignee
-										
-									</legend>
-									<label for="patAssigneeName">
-										<span>Name</span>
-										<input id="patAssigneeName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="patAssigneeAddress">
-										<span>Street Address</span>
-										<input id="patAssigneeAddress" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="patAssigneeCity">
-										<span>City</span>
-										<input id="patAssigneeCity" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="patAssigneeState">
-										<span>State</span>
-										<input id="patAssigneeState" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="patAssigneeCountryName">
-										<span>Country</span>
-										<input id="patAssigneeCountryName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="patAssigneePostcode">
-										<span>Postal Code</span>
-										<input id="patAssigneePostcode" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-								</fieldset>
-							</div>
-							<div class="col-xs-12 col-sm-6 col-md-4">
-								<fieldset>
-									<legend>Patent Numbers</legend>
-									<label for="applNum">
-										<span>
-											Application</span>
-										<input id="applNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="publNum">
-										<span>
-											Publication</span>
-										<input id="publNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="patNum">
-										<span>
-											Patent</span>
-										<input id="patNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="pctNum">
-										<span>
-											PCT</span>
-										<input id="pctNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-									<label for="intlRegNum">
-										<span>
-											Intl Registration</span>
-										<input id="intlRegNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-								</fieldset>
-								<fieldset>
-									<legend>Invention Title</legend>
-									<label for="inventionTitle">
-										<span>
-											Invention Title</span>
-										<input id="inventionTitle" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
-									</label>
-								</fieldset>
-							</div>
+								</legend>
+								<label for="corrName">
+									<span>Name</span>
+									<input id="corrName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="corrAddress">
+									<span>Address</span>
+									<input id="corrAddress" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<fieldset>
+								<legend>Assignor
+
+								</legend>
+								<label for="patAssignorName">
+									<span>Assignor Name</span>
+									<input id="patAssignorName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+
+							<fieldset>
+								<legend>Assignee
+
+								</legend>
+								<label for="patAssigneeName">
+									<span>Name</span>
+									<input id="patAssigneeName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeAddress">
+									<span>Street Address</span>
+									<input id="patAssigneeAddress" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeCity">
+									<span>City</span>
+									<input id="patAssigneeCity" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeState">
+									<span>State</span>
+									<input id="patAssigneeState" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneeCountryName">
+									<span>Country</span>
+									<input id="patAssigneeCountryName" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patAssigneePostcode">
+									<span>Postal Code</span>
+									<input id="patAssigneePostcode" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<fieldset>
+								<legend>Patent Numbers</legend>
+								<label for="applNum">
+									<span>
+										Application</span>
+									<input id="applNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="publNum">
+									<span>
+										Publication</span>
+									<input id="publNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="patNum">
+									<span>
+										Patent</span>
+									<input id="patNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="pctNum">
+									<span>
+										PCT</span>
+									<input id="pctNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+								<label for="intlRegNum">
+									<span>
+										Intl Registration</span>
+									<input id="intlRegNum" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
+							<fieldset>
+								<legend>Invention Title</legend>
+								<label for="inventionTitle">
+									<span>
+										Invention Title</span>
+									<input id="inventionTitle" class="ember-view ember-text-field sg-input form-control input-sm" type="text" name="searchInput">
+								</label>
+							</fieldset>
 						</div>
 					</div>
 				</div>
 			</div>
-		
+		</div>
+
 		<div class="row">
 			<div class="col-lg-12">
 
 				<div class="input-group" style="margin-top: 20px">
 					<div class="input-group-btn">
 						<button class="btn btn-default dropdown-toggle btn-blog" data-toggle="dropdown" aria-expanded="false" id="dropdownMenu1" style="width:200px">
-							<span class="selection pull-left">Select one</span>
+							<span class="selection pull-left">Reel/Frame number</span>
 							<span class="pull-right glyphiconglyphicon-chevron-down caret" style="float:right;margin-top:10px"></span>
 						</button>
 
 						<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 							<li>
-								<a href="#" data-value="Enter a the exact information for a quick look-up">Reel/Frame number</a>
+								<a href="#">Reel/Frame number</a>
 							</li>
 							<li>
-								<a href="#" data-value="Enter a the exact information for a quick look-up">Patent number</a>
+								<a href="#">Patent number</a>
 							</li>
 							<li>
-								<a href="#" data-value="Enter a the exact information for a quick look-up">Application number</a>
+								<a href="#">Application number</a>
 							</li>
 							<li>
-								<a href="#" data-value="Enter a the exact information for a quick look-up">Publication number</a>
+								<a href="#">Publication number</a>
 							</li>
 							<li>
-								<a href="#" data-value="Enter a the exact information for a quick look-up">PCT number</a>
+								<a href="#">PCT number</a>
 							</li>
 							<li>
-								<a href="#" data-value="Enter a the exact information for a quick look-up">Patent Int'l Reg. number</a>
+								<a href="#">Patent Int'l Reg. number</a>
 							</li>
 						</ul>
 					</div>
-					<input type="text" class="form-control" id="vl">
+					<input type="text" class="form-control" id="vl" placeholder="Enter an exact number">
+					<span class="input-group-btn">
+						<button class="btn btn-success" type="button"><i class="fa fa-search"></i></button>
+					</span>
 				</div>
 			</div>
 
@@ -246,7 +250,7 @@
 
 	<script src="scripts/cb7562c6.plugins.js"></script>
 
-	<script src="scripts/2fcae939.main.js"></script>
+	<script src="scripts/e5093cc7.main.js"></script>
 </body>
 
 </html>

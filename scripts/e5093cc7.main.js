@@ -1,0 +1,1 @@
+console.log("'Allo 'Allo!"),$(".dropdown-menu").on("click","li a",function(){var a=$(this).html();$(this).parent("li").siblings().removeClass("active"),$(this).parents(".input-group-btn").find(".selection").html(a),$(this).parents("li").addClass("active")});
